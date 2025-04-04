@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "agents"
 version = "0.1.0"
@@ -9,4 +13,8 @@ dependencies = [
     "numpy>=2.2.4",
     "openai-agents>=0.0.7",
     "sounddevice>=0.5.1",
+    "yfinance>=0.2.36",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["agent_store"]
