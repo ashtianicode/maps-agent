@@ -10,5 +10,5 @@ wheels/
 .venv
 
 # Ignore all files in the tmp directory
-tmp/*
+_tmp/*
 
